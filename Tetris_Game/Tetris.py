@@ -3567,7 +3567,7 @@ while not done:
 
                         if is_stackable(next_mino1, matrix):
                             mino = next_mino1
-                            next_mino1 = randint(1, 10)
+                            next_mino1 = randint(1, 7)
                             dx, dy = 3, 0
                             rotation = 0
                             hold = False
@@ -3605,7 +3605,7 @@ while not done:
 
                         if is_stackable(next_mino1_2P, matrix_2P):
                             mino_2P = next_mino1_2P
-                            next_mino1_2P = randint(1, 10)
+                            next_mino1_2P = randint(1, 7)
                             dx_2P, dy_2P = 3, 0
                             rotation_2P = 0
                             hold_2P = False
