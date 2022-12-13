@@ -3713,8 +3713,8 @@ while not done:
                 #1P
                 for i in range(1, max_score, fever_interval):
                     if combo_count > i * combo_fever and combo_count < (i + 1) * combo_fever:  # 2n의콤보에 따라 발생
-                        mino_2P = randint(8, 10)
-                        next_mino1_2P = randint(8, 10)
+                        mino_2P = next_mino1_2P
+                        next_mino1_2P = randint(9, 9)
                         next_fever = (i + fever_interval) * combo_fever
                         # fever time시 이미지 깜빡거리게
                         if blink:
@@ -3727,8 +3727,8 @@ while not done:
                 #2P
                 for i in range(1, max_score, fever_interval):
                     if combo_count_2P > i * combo_fever and combo_count_2P < (i + 1) * combo_fever:  # 500~1000,2000~2500.3500~4000
-                        mino = randint(8, 10)
-                        next_mino1 = randint(8, 10)
+                        mino = next_mino1
+                        next_mino1 = randint(9, 9)
                         next_fever = (i + fever_interval) * combo_fever
                         # fever time시 이미지 깜빡거리게
                         if blink:
