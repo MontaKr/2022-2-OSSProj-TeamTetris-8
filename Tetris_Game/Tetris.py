@@ -2344,7 +2344,7 @@ def set_initial_values():
     max_score = 99999
     fever = 0
 
-    combo_fever = 2
+    combo_fever = 4
 
     line_count = 0
     score = 0
@@ -3712,7 +3712,7 @@ while not done:
                 # 피버타임일 경우 상대방에게 변종블록 생성
                 #1P
                 for i in range(1, max_score, fever_interval):
-                    if combo_count > i * combo_fever and combo_count < (i + 1) * combo_fever:  # 2n의콤보에 따라 발생
+                    if combo_count > i * combo_fever and combo_count < (i + 1) * combo_fever:  # 5콤보 달성시
                         mino_2P = next_mino1_2P
                         next_mino1_2P = randint(9, 9)
                         next_fever = (i + fever_interval) * combo_fever
@@ -3726,7 +3726,7 @@ while not done:
                             blink = True
                 #2P
                 for i in range(1, max_score, fever_interval):
-                    if combo_count_2P > i * combo_fever and combo_count_2P < (i + 1) * combo_fever:  # 500~1000,2000~2500.3500~4000
+                    if combo_count_2P > i * combo_fever and combo_count_2P < (i + 1) * combo_fever:  # 5콤보 달성시
                         mino = next_mino1
                         next_mino1 = randint(9, 9)
                         next_fever = (i + fever_interval) * combo_fever
