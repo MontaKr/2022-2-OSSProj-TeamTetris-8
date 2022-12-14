@@ -5,6 +5,7 @@ playing_fever_image_x_rate = 0.2
 playing_image_y_rate = 0.2
 playing_fever_image_y_rate = 0.1
 playing_image_width_rate = 0.01
+playing_image_width_rate_1 = 0.37
 fever1_image_width_rate = 0.5
 fever2_image_width_rate = 0.02
 playing_image_height_rate = 0.1
